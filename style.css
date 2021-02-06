@@ -1,0 +1,439 @@
+html,
+body {
+    height: 100%;
+    min-width: 1000px;
+    text-size-adjust: 100%;
+    font-family: "Roboto Slab", serif !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1000px;
+    background-color: black !important;
+}
+
+#header {
+    background: black;
+    height: 70px;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 2;
+}
+#header-img {
+    height: 100%;
+    margin-left: 7%;
+    display: flex;
+}
+
+.logo-name {
+    font-size: 40px;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    color: #a77e40;
+    width: 70%;
+    float: right;
+    display: flex;
+    padding-top: 0.5%;
+    padding-left: 1%;
+}
+
+.disp-flex {
+
+}
+
+@media (max-width: 1000px) {
+    .logo-name {
+        margin: 5% 5%;
+    }
+}
+
+#nav-bar {
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    display: flex;
+    overflow: hidden;
+}
+.nav-link {
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    color: #a77e40;
+    float: left;
+    margin: 6% 1% 1%;
+    width: 25%;
+    text-align: center;
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    #header {
+        height: 15%;
+        width: 100%;
+    }
+}
+@media (max-width: 1000px) {
+    #header-img {
+        margin-top: 0;
+        width: 15%;
+        height: 80%;
+        position: relative;
+    }
+}
+
+@media (max-width: 1000px) {
+    img > .logo-name {
+        margin: 0 10%;
+    }
+}
+@media (max-width: 1000px) {
+    #nav-bar {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-right: 2%;
+    }
+}
+@media (max-width: 1000px) {
+    .logo-name > #nav-bar {
+        background-color: white;
+        margin: 10% 30%;
+    }
+}
+
+.cat-background {
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background: url("https://cdn.discordapp.com/attachments/699177837189398539/778744346727809044/50e9d1444952b108f5d084609629317e113fdce15b4c704f752a7cd49e4bcc51_1280.jpg");
+}
+
+#section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form {
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    text-align: center;
+    overflow-y: hidden;
+}
+#form-input {
+    display: flex;
+    margin-left: 40%;
+}
+
+#submit {
+    font-family: "Roboto Slab", serif;
+    background-color: #f5d654;
+    text-transform: uppercase;
+    border-color: #a77e40;
+    color: #292625;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 2px;
+}
+
+input[type="email"]:focus {
+    outline: 2px solid orange !important;
+}
+::placeholder {
+    color: #31302f;
+    opacity: 1;
+}
+#email {
+    font-size: 1rem;
+    color: black;
+    background-color: #83838c;
+    border-color: #a77e40;
+    border-width: 2px;
+    border-style: solid;
+    width: 20rem;
+    cursor: text;
+    padding: 1vw 3vw;
+}
+
+#section-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 330px;
+    object-fit: cover;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    overflow-x: hidden;
+    background: black;
+}
+#section-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60%;
+}
+#small-picture {
+    object-fit: cover;
+    max-width: 33%;
+}
+
+.text {
+    max-width: 33%;
+    flex: 0 0 100%;
+    height: 100%;
+    text-align: left;
+    position: relative;
+    display: flex;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+#styling-1 {
+    background-color: #d0c8c4;
+    color: black !important;
+    padding: 10% 20%;
+    position: relative;
+    max-width: 100%;
+    flex: 1 1 10%;
+}
+#styling-2 {
+    position: relative;
+    max-width: 100%;
+    flex: 1 1 10%;
+    padding: 10% 3%;
+}
+#up-text {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin: 79px 0px 0px;
+    overflow-wrap: break-word;
+    padding: 0px;
+    display: block;
+    line-height: 1.2;
+    font-size: 1em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    font-weight: bold;
+}
+#down-text {
+    font-weight: 700;
+    background-image: none;
+    font-size: 2.25rem;
+    margin: 20px 0px 0px;
+    font-family: "Playfair Display", serif !important;
+    overflow-wrap: break-word;
+    position: relative;
+}
+#small-text {
+    margin: 20px 0px 0px;
+    overflow-wrap: break-word;
+    position: relative;
+    align-self: flex-start;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+}
+
+#left-text {
+    background-color: #292625;
+}
+#small-right {
+    color: white;
+    margin: 128px 100px 0px;
+    padding-top: 20px;
+    overflow-wrap: break-word;
+    position: relative;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 1000px) {
+    #section-3 {
+        flex-direction: row;
+        min-height: 60%;
+        min-width: 100%;
+    }
+}
+@media (max-width: 1000px) {
+    #up-text,
+    #small-text {
+        font-size: 2vw;
+        text-size-adjust: auto;
+    }
+    #down-text {
+        font-size: 2vw;
+        text-size-adjust: auto;
+    }
+    #small-right {
+        font-size: 2vw;
+        text-size-adjust: auto;
+        margin: 7% 10%;
+    }
+    #styling-1 {
+        padding: 5% 10%;
+    }
+}
+#section-4 {
+    color: white;
+    background-color: #292625;
+    background-image: none;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    align-content: center;
+}
+#container-box {
+    min-height: 100%;
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#h2-text {
+    font-size: 3rem;
+    font-weight: 600;
+    width: 35%;
+    padding: 0px;
+    margin: 5% auto 0px;
+    overflow-wrap: break-word;
+    font-family: "Playfair Display", serif !important;
+    text-align: center;
+}
+
+#more {
+    font-family: "Open Sans", sans-serif;
+    width: 60%;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 3% auto 0px;
+    overflow-wrap: break-word;
+    padding: 0px;
+    text-align: center;
+}
+.pricing-container{
+    min-height: 356px;
+    grid-template-columns:
+      calc(33.3333% - 7px)
+      calc(33.3333% - 7px)
+      calc(33.3333% - 7px);
+    gap: 10px;
+    margin: 50px auto 60px 0px;
+    display: grid;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    position: relative;
+}
+.pricing{
+    text-align: left;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+}
+.box{
+    padding: 30px;
+    position: relative;
+    max-width: 100%;
+    flex: 1 1 0%;
+    text-align: left;
+    display: block;
+}
+.price{
+    margin-top: 30px;
+    width: 227px;
+    min-height: 198px;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 20px 0px;
+    margin: -30px auto 0px;
+    opacity: 1;
+    background-color: #31302F !important;
+    stroke: none;
+    border-color: #A77E40;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+}
+.price-box{
+    padding: 30px 30px 23px;
+    position: relative;
+    max-width: 100%;
+    flex: 1 1 0%;
+    text-align: center;
+}
+.price-number{
+    font-weight: 700;
+    margin: 0px auto;
+    position: relative;
+    overflow-wrap: break-word;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px
+}
+.about-item{
+    font-weight: 300;
+    margin: 20px auto 0px;
+    position: relative;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-family: Roboto, sans-serif;
+}
+.select{
+    color: rgb(255, 255, 255) !important;
+    background-color: #A77E40 !important;
+    border-width: 2px;
+    padding: 16px 61px 16px 60px;
+    font-size: 1rem;
+    background-image: none;
+    border-style: solid;
+    margin: 15px auto 0px;
+    border-color: rgb(69, 69, 69) !important;
+    position: relative;
+    display: table;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    align-self: flex-start;
+    text-decoration: none;
+}
+.item-pic{
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    object-position: 0.84% 50%;
+    margin: auto auto auto auto;
+    height: 230px;
+    width: 246px;
+}
+
+.small-cat{
+    height: 100%;
+    width: 33%;
+    background-size: cover;
+    background: url('https://cdn.discordapp.com/attachments/699177837189398539/779003888925540352/55e5d740435bae14f6da8c7dda793678153bdee757596c48732f7ed3964ccc5cb0_1280.jpg');
+}
+
+.cover {
+    background-size: cover;
+}
